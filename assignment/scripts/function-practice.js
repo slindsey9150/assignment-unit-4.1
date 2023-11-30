@@ -69,16 +69,16 @@ console.log('get Last Test', getLast(numbers));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 let valuesInArray = [12,25,2,1,5,6,7]
 function find(value, array) {
-  let found = false;
-  for (value of array){
-    if (value === true ){
-      return true
-    }
-    else{
-      return false;
-    }
+for (let i = 0; i < array.length; i++){
+  if (array[i] = true){
+    return true
   }
+else{
+  return false
 }
+}
+  }
+
 console.log("valuesInArray test 'true':", find(2,valuesInArray));
 console.log("valuesInArray test 'false':", find(3,valuesInArray));
 // ----------------------
@@ -87,9 +87,15 @@ console.log("valuesInArray test 'false':", find(3,valuesInArray));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+if (letter == string[0]){
+  return true;
 }
-
+else {
+  return false;
+}
+}
+console.log("run isFirstLetter true:", isFirstLetter('c', 'crunchwrapSupreme'));
+console.log("run isFirstLetter false:", isFirstLetter('w', 'beyonceKnowles'));
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
