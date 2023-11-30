@@ -70,13 +70,11 @@ console.log('get Last Test', getLast(numbers));
 let valuesInArray = [12, 25, 2, 1, 5, 6, 7]
 function find(value, array) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] = true) {
-      return true
-    }
-    else {
-      return false
+    if (array[i] === value) {
+      return true;
     }
   }
+  return false;
 }
 
 console.log("valuesInArray test 'true':", find(2, valuesInArray));
@@ -99,7 +97,10 @@ console.log("run isFirstLetter false:", isFirstLetter('w', 'beyonceKnowles'));
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
-  let sum = array.join;
+  let sum = 0;
+  for (let value of array){
+    sum += value;
+  }
   return sum;
 
   // TODO: loop to add items
