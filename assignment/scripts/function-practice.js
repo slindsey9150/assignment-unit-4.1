@@ -67,51 +67,62 @@ console.log('get Last Test', getLast(numbers));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-let valuesInArray = [12,25,2,1,5,6,7]
+let valuesInArray = [12, 25, 2, 1, 5, 6, 7]
 function find(value, array) {
-for (let i = 0; i < array.length; i++){
-  if (array[i] = true){
-    return true
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] = true) {
+      return true
+    }
+    else {
+      return false
+    }
   }
-else{
-  return false
 }
-}
-  }
 
-console.log("valuesInArray test 'true':", find(2,valuesInArray));
-console.log("valuesInArray test 'false':", find(3,valuesInArray));
+console.log("valuesInArray test 'true':", find(2, valuesInArray));
+console.log("valuesInArray test 'false':", find(3, valuesInArray));
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-if (letter == string[0]){
-  return true;
-}
-else {
-  return false;
-}
+  if (letter == string[0]) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 console.log("run isFirstLetter true:", isFirstLetter('c', 'crunchwrapSupreme'));
 console.log("run isFirstLetter false:", isFirstLetter('w', 'beyonceKnowles'));
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
-  let sum = 0;
+  let sum = array.join;
+  return sum;
+
   // TODO: loop to add items
 
   // TODO: return the sum
 }
 
+console.log("run sumAll test:", sumAll(numbers));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
+let allPositiveArray = [1, 3, 5, 2, 14, 0, -1, -15, -27]
 
+function allPositive( array) {
+let result = []
+  for (let value of array) {
+    if (value > 0) {
+      result.push(value)
+    }
+  }
+  return result;
 }
-
+console.log("run allPositive test:", allPositive(allPositiveArray));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
